@@ -5,6 +5,13 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+
+body {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
@@ -12,6 +19,7 @@ Feel free to adjust the defaults to your needs.
 }
 #closed-captions .on {
 	opacity: 1;
+	color: white;
 }
 #closed-captions .off {
 	transition: .2s;
@@ -19,6 +27,10 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-style: italic;
+}
+
+.voice2 {
+	font-style: normal;
 }
 
 /* **********************************************
@@ -102,15 +114,34 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
 .sound1 {
-	background: yellow;
+	background: orange;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: 1s;
+}
+
+.sound2 {
+	background-color: red;
+}
+
+.sound3 {
+	background-color: black;
 }
 
 iframe {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
 	transition: 1s;
 }
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
+
+/* The moment the class .sound1 is added to the body, the movie makes a turn 
 .sound1 iframe {
 	transform: rotate(1turn);
 }
+*/
+
