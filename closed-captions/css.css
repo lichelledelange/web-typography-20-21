@@ -8,8 +8,20 @@ Feel free to adjust the defaults to your needs.
 
 body {
 	background-color: black;
-	width: 100%;
-	height: 100%;
+}
+
+iframe {
+	transition: 1s;
+	margin-left: 400px;
+	margin-top: 200px;
+}
+
+/*geluiden */ 
+.muziek1, .muziek2, .muziek3, .muziek4, .muziek5, .muziek6, .muziek7, .muziek8, .muziek9 { 
+	background:black;
+	padding: 8px;
+	z-index: 1;
+	margin-top: 55px;
 }
 
 #closed-captions p {
@@ -19,19 +31,38 @@ body {
 }
 #closed-captions .on {
 	opacity: 1;
-	color: white;
 }
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
 }
+
 .voice1 {
 	font-style: italic;
+	font-family: "brenner mono";
+	font-size: 2em;
+	color: cornflowerblue;
 }
 
 .voice2 {
-	font-style: normal;
+	font-family: "brenner sans";
+	font-size: 2em;
+	color: white;
 }
+
+.voice3 {
+	font-family: "brenner slab";
+	font-style: bold;
+	font-size: 2em;
+	color:red;
+}
+
+.voice4 {
+	font-family: "brenner condensed";
+	font-size: 2em;
+	color: seagreen;
+}
+
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -114,34 +145,251 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-.sound1 {
-	background: orange;
-	transform: translate(-50%, -50%);
+.muziek1 {
+	opacity: 0;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transition: 1s;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound1 .muziek1 {
+	opacity: 1;
+}
+
+.sound2 .muziek1 {
+	opacity: 0;
+}
+
+.muziek2 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound2 .muziek2 {
+	opacity: 1;
+}
+
+.sound3 .muziek2 {
+	opacity: 0;
+}
+
+.muziek3 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound4 .muziek3 {
+	opacity: 1;
+}
+
+.sound5 .muziek3 {
+	opacity: 0;
+}
+
+.muziek4 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound6 .muziek4 {
+	opacity: 1;
+}
+
+.sound7 .muziek4 {
+	opacity: 0;
+}
+
+.muziek5 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound8 .muziek5 {
+	opacity: 1;
+}
+
+.sound9 .muziek5 {
+	opacity: 0;
+}
+
+.muziek6 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound9 .muziek6 {
+	opacity: 1;
+}
+
+.sound10 .muziek6 {
+	opacity: 0;
+}
+
+.muziek7 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound12 .muziek7 {
+	opacity: 1;
+}
+
+.sound13 .muziek7 {
+	opacity: 0;
+}
+
+.muziek8 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound13 .muziek8 {
+	opacity: 1;
+}
+
+.sound14 .muziek8 {
+	opacity: 0;
+}
+
+.muziek9 {
+	opacity: 0;
+	position: absolute;
+	left: 45%;
+	top: 23%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.sound14 .muziek9 {
+	opacity: 1;
+}
+
+.sound15 .muziek9 {
+	opacity: 0;
+}
+
+.sound1 {
+	background: black;
+	animation: alarm 1s;
+}
+
+@keyframes alarm {
+	from {
+		background-color: black;
+	}
+	to {
+		background-color: red;
+	}
 }
 
 .sound2 {
-	background-color: red;
+	background: black;
+	animation: alarm2 1s;
 }
 
-.sound3 {
-	background-color: black;
+@keyframes alarm2 {
+	from {
+		background-color: black;
+	}
+	to {
+		background-color: darkred;
+	}
 }
 
-iframe {
-	transform: translate(-50%, -50%);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transition: 1s;
+.sound4 {
+	background: black;
+	animation: scan 1s;
 }
 
-/* The moment the class .sound1 is added to the body, the movie makes a turn 
-.sound1 iframe {
-	transform: rotate(1turn);
+@keyframes scan {
+	from {
+		background-color: black;
+	}
+	to {
+		background-image: url(../Gifjes/giphy.gif);
+	}
 }
-*/
 
+.sound6 {
+	background: black;
+	animation: scan2 1s;
+}
+
+@keyframes scan2 {
+	from {
+		background-color: black;
+	}
+	to {
+		background-image: url(../Gifjes/giphy.gif);
+	}
+}
+
+.sound8 {
+	background: black;
+	animation: scan3 1s;
+}
+
+@keyframes scan3 {
+	from {
+		background-color: black;
+	}
+	to {
+		background-image: url(../Gifjes/giphy.gif);
+	}
+}
+
+.sound9 iframe {
+	animation: groter 60s linear both;
+}
+
+@keyframes groter {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(3);
+	}
+}
+
+.sound10 iframe {
+	animation: kleiner 40s linear both;
+}
+
+@keyframes kleiner {
+	0% {
+		transform: scale(3);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
